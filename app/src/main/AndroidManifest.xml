@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ojan11.arindika">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".submateri.Notasi" />
+        <activity android:name=".submateri.SubNotasi.TandaKunci" />
+        <activity android:name=".submateri.SubNotasi.LetakNada" />
+        <activity android:name=".submateri.SubNotasi.Paranada" />
+        <activity android:name=".submateri.SubNotasi.NamaNada" />
+        <activity android:name=".submateri.SubNotasi.TanggaNada" />
+        <activity android:name=".submateri.subdurasi.SimbolDurasi" />
+        <activity android:name=".submateri.Tempo" />
+        <activity android:name=".submateri.subdurasi.TandaSukat" />
+        <activity android:name=".submateri.TandaDinamik" />
+        <activity android:name=".submateri.SubNotasi.TandaAksidental" />
+        <activity android:name=".submateri.Dinamika" />
+        <activity android:name=".submateri.Artikulasi" />
+        <activity android:name=".submateri.SubNotasi.subtangganada.subtn3.MinorAsli" />
+        <activity android:name=".submateri.SubNotasi.subtangganada.subtn3.MinorHarmonis" />
+        <activity android:name=".submateri.SubNotasi.subtangganada.subtn3.MinorMelodis"></activity>
+    </application>
+
+</manifest>

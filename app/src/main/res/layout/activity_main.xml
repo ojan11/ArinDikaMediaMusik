@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_materi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ojan11.arindika.MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bgg">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MATERI"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/tmain"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="85dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/materi_a"
+                android:background="@drawable/m1"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="85dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/materi_b"
+                android:background="@drawable/m2"
+                android:layout_below="@+id/materi_a"/>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="85dp"
+                android:id="@+id/materi_c"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/m3"
+                android:layout_below="@+id/materi_b"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="85dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/materi_d"
+                android:background="@drawable/m4"
+                android:layout_below="@+id/materi_c"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="85dp"
+                android:id="@+id/materi_e"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/m5"
+                android:layout_below="@+id/materi_d"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/backsound"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/icbacksound"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/guide"
+                android:background="@drawable/icguide"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

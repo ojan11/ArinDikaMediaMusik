@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A5E5</color>
+    <color name="colorPrimaryDark">#5AC1E9</color>
+    <color name="colorAccent">#FFF</color>
+    <color name="hijau">#BAD31F</color>
+    <color name="kuning">#FBEF00</color>
+    <color name="black">#332C2B</color>
+</resources>

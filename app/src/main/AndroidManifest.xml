@@ -36,13 +36,16 @@
         <activity android:name=".submateri.subdurasi.SimbolDurasi" />
         <activity android:name=".submateri.Tempo" />
         <activity android:name=".submateri.subdurasi.TandaSukat" />
-        <activity android:name=".submateri.TandaDinamik" />
         <activity android:name=".submateri.SubNotasi.TandaAksidental" />
         <activity android:name=".submateri.Dinamika" />
         <activity android:name=".submateri.Artikulasi" />
         <activity android:name=".submateri.SubNotasi.subtangganada.subtn3.MinorAsli" />
         <activity android:name=".submateri.SubNotasi.subtangganada.subtn3.MinorHarmonis" />
-        <activity android:name=".submateri.SubNotasi.subtangganada.subtn3.MinorMelodis"></activity>
+        <activity android:name=".submateri.SubNotasi.subtangganada.subtn3.MinorMelodis" />
+        <activity android:name=".submateri.subnilainotasi.RitmeNot" />
+        <activity android:name=".submateri.subnilainotasi.Rest" />
+        <activity android:name=".submateri.subnilainotasi.Triplet" />
+        <activity android:name=".submateri.subnilainotasi.NotBertitik"></activity>
     </application>
 
 </manifest>

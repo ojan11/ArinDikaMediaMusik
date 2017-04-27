@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.example.ojan11.arindika.submateri.Artikulasi;
 import com.example.ojan11.arindika.submateri.Dinamika;
+import com.example.ojan11.arindika.submateri.NilaiNotasi;
 import com.example.ojan11.arindika.submateri.Notasi;
 import com.example.ojan11.arindika.submateri.SubNotasi.subtangganada.subtn3.MinorHarmonis;
 import com.example.ojan11.arindika.submateri.Tempo;
@@ -124,10 +125,10 @@ public class MainActivity extends AppCompatActivity implements android.view.View
                 startActivity(intent);
             }else if (id == R.id.materi_b){
                 b.startAnimation(anim_button);
-                Intent intent = new Intent(this, MinorHarmonis.class);
-//                Bundle extras = new Bundle();
-//                extras.putInt("TEMP",getTempGuide());
-//                intent.putExtras(extras);
+                Intent intent = new Intent(this, NilaiNotasi.class);
+                Bundle extras = new Bundle();
+                extras.putInt("TEMP",getTempGuide());
+                intent.putExtras(extras);
                 startActivity(intent);
             }else if(id == R.id.materi_c){
                 c.startAnimation(anim_button);

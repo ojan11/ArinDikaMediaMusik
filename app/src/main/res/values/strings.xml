@@ -88,4 +88,8 @@
     <string name="mn3">1  -  1/2  -  1  -  1  -  1/2  -  1  -  1</string>
     <string name="mh">Pada tangga nada minor harmonis, nada ke-7 dinaikkan setengah langkah sehingga memiliki rentang jarak sebagai berikut :</string>
     <string name="mm">Pada tangga nada minor melodis, nada ke-6 dan nada ke-7 dinaikkan setengah langkah pada ascending (naik) saja, sedangkan pada pola descending (turun) nada ke-6 dan ke-7 diturunkan setengah (tetap sama seperti minor aslinya) sehingga memiliki rentang jarak sebagai berikut :</string>
+    <string name="rs">Rest atau tanda istirahat memiliki arti diam. Macam-macam tanda rest dapat dilihat di bawah ini :</string>
+    <string name="nb">Titik yang berada samping not memiliki nilai setengah dari nilai not tersebut. Not bertitik sering disebut Dotted Note. Contoh Dotted Note dapat dilihat di bawah ini :</string>
+    <string name="nb2">Selain not dengan satu titik, terdapat juga not dengan dua titik di sebelah not. Titik yang kedua memiliki nilai setengah dari titik pertama. Not dengan dua titik sering disebut Double Dotted Note. Contoh Double Dotted Not dapat dilihat di bawah ini :</string>
+    <string name="tp">Triplet atau sering disebut dengan Triool adalah rangkaian 3 not yang seimbang dengan perbandingan 2 hitungan not atau sejumlah hitungan lainnya. Dilambangkan dengan lengkung pengikat berangka tiga. Jenis-jenis triplet dapat dilihat di bawah ini :</string>
 </resources>

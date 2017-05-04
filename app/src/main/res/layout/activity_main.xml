@@ -37,48 +37,68 @@
         android:layout_marginTop="5dp"
         android:orientation="vertical"
         android:background="@drawable/bg">
-        <RelativeLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:layout_width="300dp"
-                android:layout_height="85dp"
-                android:layout_alignParentLeft="true"
-                android:id="@+id/materi_a"
-                android:background="@drawable/m1"
-                android:layout_marginTop="5dp"/>
+            android:layout_height="450dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/materi_a"
+                    android:background="@drawable/m1"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
 
-            <Button
-                android:layout_width="300dp"
-                android:layout_height="85dp"
-                android:layout_alignParentRight="true"
-                android:id="@+id/materi_b"
-                android:background="@drawable/m2"
-                android:layout_below="@+id/materi_a"/>
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/materi_b"
+                    android:background="@drawable/m2"
+                    android:layout_below="@+id/materi_a"/>
 
-            <Button
-                android:layout_width="300dp"
-                android:layout_height="85dp"
-                android:id="@+id/materi_c"
-                android:layout_alignParentLeft="true"
-                android:background="@drawable/m3"
-                android:layout_below="@+id/materi_b"/>
-            <Button
-                android:layout_width="300dp"
-                android:layout_height="85dp"
-                android:layout_alignParentRight="true"
-                android:id="@+id/materi_d"
-                android:background="@drawable/m4"
-                android:layout_below="@+id/materi_c"/>
-            <Button
-                android:layout_width="300dp"
-                android:layout_height="85dp"
-                android:id="@+id/materi_e"
-                android:layout_alignParentLeft="true"
-                android:background="@drawable/m5"
-                android:layout_below="@+id/materi_d"/>
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/materi_c"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/m3"
+                    android:layout_below="@+id/materi_b"/>
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/materi_d"
+                    android:background="@drawable/m4"
+                    android:layout_below="@+id/materi_c"/>
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/materi_e"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/m5"
+                    android:layout_below="@+id/materi_d"/>
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/materi_f"
+                    android:background="@drawable/m6"
+                    android:layout_below="@+id/materi_e"/>
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/materi_g"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/m7"
+                    android:layout_below="@+id/materi_f"/>
 
-        </RelativeLayout>
+            </RelativeLayout>
+
+        </ScrollView>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -98,9 +118,16 @@
                 android:id="@+id/guide"
                 android:background="@drawable/icguide"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"/>
-
-
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"/>
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/info"
+                android:background="@drawable/icinfo"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="120dp"/>
         </RelativeLayout>
 
 

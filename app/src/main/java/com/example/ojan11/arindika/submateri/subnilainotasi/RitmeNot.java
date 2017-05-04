@@ -71,6 +71,7 @@ public class RitmeNot extends AppCompatActivity implements View.OnClickListener{
         h.setOnClickListener(this);
 
         mp = MediaPlayer.create(this, R.raw.paranada);
+        mp2 = MediaPlayer.create(this, R.raw.paranada);
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         temp = extras.getInt("TEMP");

@@ -33,9 +33,7 @@
         <activity android:name=".submateri.SubNotasi.Paranada" />
         <activity android:name=".submateri.SubNotasi.NamaNada" />
         <activity android:name=".submateri.SubNotasi.TanggaNada" />
-        <activity android:name=".submateri.subdurasi.SimbolDurasi" />
         <activity android:name=".submateri.Tempo" />
-        <activity android:name=".submateri.subdurasi.TandaSukat" />
         <activity android:name=".submateri.SubNotasi.TandaAksidental" />
         <activity android:name=".submateri.Dinamika" />
         <activity android:name=".submateri.Artikulasi" />
@@ -45,7 +43,22 @@
         <activity android:name=".submateri.subnilainotasi.RitmeNot" />
         <activity android:name=".submateri.subnilainotasi.Rest" />
         <activity android:name=".submateri.subnilainotasi.Triplet" />
-        <activity android:name=".submateri.subnilainotasi.NotBertitik"></activity>
+        <activity android:name=".submateri.subnilainotasi.NotBertitik" />
+        <activity android:name=".submateri.NilaiNotasi" />
+        <activity android:name=".submateri.Chord" />
+        <activity android:name=".submateri.subchord.ChordC" />
+        <activity android:name=".submateri.subchord.ChordD" />
+        <activity android:name=".submateri.subchord.ChordE" />
+        <activity android:name=".submateri.subchord.ChordA" />
+        <activity android:name=".submateri.subchord.ChordB" />
+        <activity android:name=".submateri.subchord.ChordF" />
+        <activity android:name=".submateri.subchord.ChordG" />
+        <activity
+            android:name=".submateri.SubNotasi.subtangganada.subtn4.Kromatis"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Info" />
+        <activity android:name=".submateri.Tes"></activity>
     </application>
 
 </manifest>

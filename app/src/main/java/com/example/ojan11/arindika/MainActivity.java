@@ -14,16 +14,18 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.ojan11.arindika.submateri.Artikulasi;
+import com.example.ojan11.arindika.submateri.Chord;
 import com.example.ojan11.arindika.submateri.Dinamika;
 import com.example.ojan11.arindika.submateri.NilaiNotasi;
 import com.example.ojan11.arindika.submateri.Notasi;
 import com.example.ojan11.arindika.submateri.SubNotasi.subtangganada.subtn3.MinorHarmonis;
 import com.example.ojan11.arindika.submateri.Tempo;
+import com.example.ojan11.arindika.submateri.Tes;
 
 
 public class MainActivity extends AppCompatActivity implements android.view.View.OnClickListener{
-    Button a, b, c, d,e;
-    Button backsound,guide;
+    Button a, b, c, d,e,f,g;
+    Button backsound,guide,info;
     MediaPlayer mp, guidemp;
     int tempguide ;
 
@@ -44,24 +46,30 @@ public class MainActivity extends AppCompatActivity implements android.view.View
 //                setContentView(R.layout.activity_materi);
 //            }
 
-        tempguide =1;
+        tempguide =0;
 
         a = (Button)findViewById(R.id.materi_a);
         b = (Button)findViewById(R.id.materi_b);
         c = (Button)findViewById(R.id.materi_c);
         d = (Button)findViewById(R.id.materi_d);
         e = (Button)findViewById(R.id.materi_e);
+        f = (Button)findViewById(R.id.materi_f);
+        g = (Button)findViewById(R.id.materi_g);
 
         a.setOnClickListener(this);
         b.setOnClickListener(this);
         c.setOnClickListener(this);
         d.setOnClickListener(this);
         e.setOnClickListener(this);
+        f.setOnClickListener(this);
+        g.setOnClickListener(this);
 
         backsound = (Button)findViewById(R.id.backsound);
         guide = (Button)findViewById(R.id.guide);
+        info = (Button)findViewById(R.id.info);
         backsound.setOnClickListener(this);
         guide.setOnClickListener(this);
+        info.setOnClickListener(this);
         mp = MediaPlayer.create(this, R.raw.soundback);
         guidemp = MediaPlayer.create(this,R.raw.awal);
         mp.start();
@@ -151,6 +159,20 @@ public class MainActivity extends AppCompatActivity implements android.view.View
                 extras.putInt("TEMP",getTempGuide());
                 intent.putExtras(extras);
                 startActivity(intent);
+            }else if(id == R.id.materi_f){
+                f.startAnimation(anim_button);
+                Intent intent = new Intent(this, Chord.class);
+                Bundle extras = new Bundle();
+                extras.putInt("TEMP",getTempGuide());
+                intent.putExtras(extras);
+                startActivity(intent);
+            }else if(id == R.id.materi_g){
+                g.startAnimation(anim_button);
+                Intent intent = new Intent(this, Tes.class);
+                Bundle extras = new Bundle();
+                extras.putInt("TEMP",getTempGuide());
+                intent.putExtras(extras);
+                startActivity(intent);
             }else if (id== R.id.backsound){
                 if(mp.isPlaying()){
                     backsound.setBackgroundResource(R.drawable.icbacksoundmute);
@@ -167,9 +189,12 @@ public class MainActivity extends AppCompatActivity implements android.view.View
                 }else {
                     guide.setBackgroundResource(R.drawable.icguide);
                     guidemp = MediaPlayer.create(this,R.raw.awal);
-                    guidemp.start();
-                    tempguide=1;
+                    //guidemp.start();
+                    tempguide=0;
                 }
+            }else if (id== R.id.info){
+                Intent intent = new Intent(this,Info.class);
+                startActivity(intent);
             }
 
         }

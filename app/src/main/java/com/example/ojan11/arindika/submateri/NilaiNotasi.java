@@ -79,28 +79,28 @@ public class NilaiNotasi extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v) {
         Animation anim_button= AnimationUtils.loadAnimation(this,R.anim.anim_scale);
         int id = v.getId();
-        if (id == R.id.pitch_a){
+        if (id == R.id.nn1){
             a.startAnimation(anim_button);
             Intent intent = new Intent(this, RitmeNot.class);
             Bundle extras = new Bundle();
             extras.putInt("TEMP",temp);
             intent.putExtras(extras);
             startActivity(intent);
-        }else if (id == R.id.pitch_b){
+        }else if (id == R.id.nn2){
             b.startAnimation(anim_button);
             Intent intent = new Intent(this, Rest.class);
             Bundle extras = new Bundle();
             extras.putInt("TEMP",temp);
             intent.putExtras(extras);
             startActivity(intent);
-        }else if(id == R.id.pitch_c){
+        }else if(id == R.id.nn3){
             c.startAnimation(anim_button);
             Intent intent = new Intent(this, Triplet.class);
             Bundle extras = new Bundle();
             extras.putInt("TEMP",temp);
             intent.putExtras(extras);
             startActivity(intent);
-        }else if(id == R.id.pitch_d){
+        }else if(id == R.id.nn4){
             d.startAnimation(anim_button);
             Intent intent = new Intent(this, NotBertitik.class);
             Bundle extras = new Bundle();

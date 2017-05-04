@@ -58,6 +58,7 @@ public class Triplet extends AppCompatActivity implements View.OnClickListener{
         g.setOnClickListener(this);
 
         mp2 = MediaPlayer.create(this, R.raw.paranada);
+        mp = MediaPlayer.create(this, R.raw.paranada);
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         temp = extras.getInt("TEMP");
